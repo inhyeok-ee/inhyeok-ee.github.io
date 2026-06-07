@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.page {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  padding: 40px 28px;
+  background-color: #f0f3f6;
+  border-right: 1px solid #ddd;
+}
+
+.profile-img {
+  width: 190px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  background-color: #ddd;
+}
+
+.sidebar h1 {
+  font-size: 28px;
+  margin: 0 0 8px 0;
+}
+
+.position {
+  font-size: 16px;
+  margin: 0;
+  color: #444;
+}
+
+.affiliation {
+  font-size: 16px;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.contact {
+  margin-top: 28px;
+  font-size: 14px;
+}
+
+.contact p {
+  margin: 8px 0;
+}
+
+.content {
+  flex: 1;
+  padding: 44px 52px;
+}
+
+section {
+  margin-bottom: 38px;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 2px solid #1f4e79;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+  color: #1f4e79;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.item {
+  margin-bottom: 22px;
+}
+
+.item p {
+  margin-top: 4px;
+}
+
+a {
+  color: #1f4e79;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+@media (max-width: 800px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .content {
+    padding: 32px 28px;
+  }
+
+  .profile-img {
+    width: 160px;
+    height: 200px;
+  }
+}
